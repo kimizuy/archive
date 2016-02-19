@@ -1,0 +1,276 @@
+fileFormatVersion: 2
+guid: 96922b199110eca49a4036fca9869f25
+timeCreated: 1447763161
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: take_walk2_0
+    21300002: take_walk2_1
+    21300004: take_walk2_2
+    21300006: take_walk2_3
+    21300008: take_walk2_4
+    21300010: take_walk2_5
+    21300012: take_walk2_6
+    21300014: take_walk2_7
+    21300016: take_walk2_8
+    21300018: take_walk2_9
+    21300020: take_walk2_10
+    21300022: take_walk2_11
+    21300024: take_walk2_12
+    21300026: take_walk2_13
+    21300028: take_walk2_14
+    21300030: take_walk2_15
+    21300032: take_walk2_16
+    21300034: take_walk2_17
+    21300036: take_walk2_18
+    21300038: take_walk2_19
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 70
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: take_walk2_0
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 1981
+        width: 261
+        height: 553
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: take_walk2_1
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 1982
+        width: 254
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: take_walk2_2
+      rect:
+        serializedVersion: 2
+        x: 797
+        y: 1984
+        width: 249
+        height: 548
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: take_walk2_3
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 1984
+        width: 241
+        height: 546
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: take_walk2_4
+      rect:
+        serializedVersion: 2
+        x: 1535
+        y: 1984
+        width: 242
+        height: 545
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: take_walk2_5
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 1340
+        width: 234
+        height: 544
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: take_walk2_6
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 1337
+        width: 240
+        height: 548
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: take_walk2_7
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 1333
+        width: 246
+        height: 553
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: take_walk2_8
+      rect:
+        serializedVersion: 2
+        x: 1164
+        y: 1332
+        width: 251
+        height: 554
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: take_walk2_9
+      rect:
+        serializedVersion: 2
+        x: 1530
+        y: 1333
+        width: 256
+        height: 554
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: take_walk2_10
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 694
+        width: 215
+        height: 549
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: take_walk2_11
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 693
+        width: 216
+        height: 549
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: take_walk2_12
+      rect:
+        serializedVersion: 2
+        x: 812
+        y: 693
+        width: 219
+        height: 548
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: take_walk2_13
+      rect:
+        serializedVersion: 2
+        x: 1178
+        y: 694
+        width: 223
+        height: 547
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: take_walk2_14
+      rect:
+        serializedVersion: 2
+        x: 1545
+        y: 694
+        width: 229
+        height: 545
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: take_walk2_15
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 49
+        width: 243
+        height: 544
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: take_walk2_16
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 49
+        width: 230
+        height: 545
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: take_walk2_17
+      rect:
+        serializedVersion: 2
+        x: 809
+        y: 49
+        width: 224
+        height: 546
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: take_walk2_18
+      rect:
+        serializedVersion: 2
+        x: 1181
+        y: 47
+        width: 218
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: take_walk2_19
+      rect:
+        serializedVersion: 2
+        x: 1551
+        y: 47
+        width: 217
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

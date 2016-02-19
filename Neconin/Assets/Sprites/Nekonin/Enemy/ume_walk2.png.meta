@@ -1,0 +1,276 @@
+fileFormatVersion: 2
+guid: 8bff13c521c665c46b175027e45cc4c7
+timeCreated: 1447767722
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: ume_walk2_0
+    21300002: ume_walk2_1
+    21300004: ume_walk2_2
+    21300006: ume_walk2_3
+    21300008: ume_walk2_4
+    21300010: ume_walk2_5
+    21300012: ume_walk2_6
+    21300014: ume_walk2_7
+    21300016: ume_walk2_8
+    21300018: ume_walk2_9
+    21300020: ume_walk2_10
+    21300022: ume_walk2_11
+    21300024: ume_walk2_12
+    21300026: ume_walk2_13
+    21300028: ume_walk2_14
+    21300030: ume_walk2_15
+    21300032: ume_walk2_16
+    21300034: ume_walk2_17
+    21300036: ume_walk2_18
+    21300038: ume_walk2_19
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 40
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: ume_walk2_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 859
+        width: 260
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ume_walk2_1
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 859
+        width: 257
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ume_walk2_2
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 859
+        width: 257
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ume_walk2_3
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 859
+        width: 256
+        height: 218
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ume_walk2_4
+      rect:
+        serializedVersion: 2
+        x: 1113
+        y: 858
+        width: 255
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ume_walk2_5
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 581
+        width: 252
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ume_walk2_6
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 581
+        width: 253
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ume_walk2_7
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 582
+        width: 255
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ume_walk2_8
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 582
+        width: 256
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ume_walk2_9
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 582
+        width: 258
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ume_walk2_10
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 301
+        width: 249
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ume_walk2_11
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 301
+        width: 249
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ume_walk2_12
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 302
+        width: 250
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ume_walk2_13
+      rect:
+        serializedVersion: 2
+        x: 841
+        y: 303
+        width: 250
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ume_walk2_14
+      rect:
+        serializedVersion: 2
+        x: 1116
+        y: 304
+        width: 252
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ume_walk2_15
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 28
+        width: 255
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ume_walk2_16
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 27
+        width: 254
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ume_walk2_17
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 26
+        width: 253
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ume_walk2_18
+      rect:
+        serializedVersion: 2
+        x: 841
+        y: 25
+        width: 250
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ume_walk2_19
+      rect:
+        serializedVersion: 2
+        x: 1118
+        y: 24
+        width: 250
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

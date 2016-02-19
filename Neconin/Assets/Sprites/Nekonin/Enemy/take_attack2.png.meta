@@ -1,0 +1,276 @@
+fileFormatVersion: 2
+guid: f290a5db078ec4d4d8cf6a2879d542f7
+timeCreated: 1447763139
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: take_attack2_0
+    21300002: take_attack2_1
+    21300004: take_attack2_2
+    21300006: take_attack2_3
+    21300008: take_attack2_4
+    21300010: take_attack2_5
+    21300012: take_attack2_6
+    21300014: take_attack2_7
+    21300016: take_attack2_8
+    21300018: take_attack2_9
+    21300020: take_attack2_10
+    21300022: take_attack2_11
+    21300024: take_attack2_12
+    21300026: take_attack2_13
+    21300028: take_attack2_14
+    21300030: take_attack2_15
+    21300032: take_attack2_16
+    21300034: take_attack2_17
+    21300036: take_attack2_18
+    21300038: take_attack2_19
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 70
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: take_attack2_0
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 1969
+        width: 234
+        height: 558
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: take_attack2_1
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 1970
+        width: 235
+        height: 557
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: take_attack2_2
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 1975
+        width: 234
+        height: 552
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: take_attack2_3
+      rect:
+        serializedVersion: 2
+        x: 1176
+        y: 1982
+        width: 233
+        height: 545
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: take_attack2_4
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1983
+        width: 242
+        height: 544
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: take_attack2_5
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 1338
+        width: 260
+        height: 544
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: take_attack2_6
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 1338
+        width: 240
+        height: 544
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: take_attack2_7
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 1338
+        width: 234
+        height: 544
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: take_attack2_8
+      rect:
+        serializedVersion: 2
+        x: 1176
+        y: 1331
+        width: 233
+        height: 551
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: take_attack2_9
+      rect:
+        serializedVersion: 2
+        x: 1544
+        y: 1326
+        width: 234
+        height: 556
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: take_attack2_10
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 680
+        width: 234
+        height: 557
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: take_attack2_11
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 682
+        width: 235
+        height: 555
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: take_attack2_12
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 687
+        width: 234
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: take_attack2_13
+      rect:
+        serializedVersion: 2
+        x: 1176
+        y: 693
+        width: 233
+        height: 544
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: take_attack2_14
+      rect:
+        serializedVersion: 2
+        x: 1544
+        y: 693
+        width: 242
+        height: 544
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: take_attack2_15
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 47
+        width: 243
+        height: 545
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: take_attack2_16
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 47
+        width: 235
+        height: 545
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: take_attack2_17
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 41
+        width: 234
+        height: 551
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: take_attack2_18
+      rect:
+        serializedVersion: 2
+        x: 1176
+        y: 36
+        width: 233
+        height: 556
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: take_attack2_19
+      rect:
+        serializedVersion: 2
+        x: 1544
+        y: 35
+        width: 234
+        height: 557
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
