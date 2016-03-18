@@ -116,6 +116,9 @@
                                 <rect key="frame" x="15" y="370" width="290" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="割引%を入力する"/>
+                                <connections>
+                                    <segue destination="rer-jp-6m4" kind="modal" id="uBt-yn-xzc"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="HuG-4O-InR">
                                 <rect key="frame" x="210" y="290" width="100" height="60"/>
@@ -244,6 +247,9 @@
                                 <rect key="frame" x="15" y="370" width="290" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="計算する"/>
+                                <connections>
+                                    <segue destination="vaE-py-5CP" kind="modal" id="kN0-4b-oqT"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="SnY-QK-sPs">
                                 <rect key="frame" x="210" y="290" width="100" height="60"/>
@@ -267,6 +273,49 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Srf-hY-lrR" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="502" y="331"/>
+        </scene>
+        <!--Result View Controller-->
+        <scene sceneID="I01-YT-sWN">
+            <objects>
+                <viewController id="vaE-py-5CP" customClass="ResultViewController" customModule="MyCalc" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WTZ-ma-Q7g">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="計算結果" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="9Xk-Ce-kek">
+                                <rect key="frame" x="15" y="25" width="200" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" id="rHd-PR-Q7I">
+                                <rect key="frame" x="15" y="55" width="290" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="NJI-au-C6z">
+                                <rect key="frame" x="15" y="93" width="290" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="他の計算をする"/>
+                                <connections>
+                                    <segue destination="08Z-sP-YT7" kind="unwind" unwindAction="restart:" id="Nwp-1s-bpR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="percentField" destination="rHd-PR-Q7I" id="uv4-E9-Ise"/>
+                        <outlet property="priceField" destination="rHd-PR-Q7I" id="cSr-pe-zZZ"/>
+                        <outlet property="resultField" destination="rHd-PR-Q7I" id="zjr-bc-gmz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8l5-Au-hmo" sceneMemberID="firstResponder"/>
+                <exit id="08Z-sP-YT7" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="890" y="331"/>
         </scene>
     </scenes>
 </document>

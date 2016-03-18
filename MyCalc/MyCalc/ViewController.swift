@@ -12,10 +12,17 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var priceField: UITextField!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
     
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let viewController = segue.destinationViewController as! PercentViewController
+        
+        if let price = Int(priceField.text!){
+            viewController.price = price
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -101,6 +108,10 @@ class ViewController: UIViewController {
     }
     
     @IBAction func tapClearButton(sender: AnyObject) {
+        priceField.text = "0"
+    }
+    
+    @IBAction func restart(segue :UIStoryboardSegue){
         priceField.text = "0"
     }
 }
