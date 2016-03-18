@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ResultViewController: UITableViewController {
+class ResultViewController: UIViewController {
     
     var price: Int = 0
     

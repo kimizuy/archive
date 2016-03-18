@@ -17,14 +17,6 @@ class ViewController: UIViewController {
     
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        let viewController = segue.destinationViewController as! PercentViewController
-        
-        if let price = Int(priceField.text!){
-            viewController.price = price
-        }
-    }
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -100,6 +92,13 @@ class ViewController: UIViewController {
         }
     }
     
+    @IBAction func tap0Button(sender: AnyObject) {
+        let value = priceField.text! + "0"
+        if let price = Int(value){
+            priceField.text = "\(price)"
+        }
+    }
+    
     @IBAction func tap00Button(sender: AnyObject) {
         let value = priceField.text! + "00"
         if let price = Int(value){
@@ -114,5 +113,14 @@ class ViewController: UIViewController {
     @IBAction func restart(segue :UIStoryboardSegue){
         priceField.text = "0"
     }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let viewController = segue.destinationViewController as! PercentViewController
+        
+        if let price = Int(priceField.text!){
+            viewController.price = price
+        }
+    }
+
 }
 
