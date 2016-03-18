@@ -14,6 +14,7 @@
 		1FE6A9331C9A3A15001C90CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FE6A9311C9A3A15001C90CD /* LaunchScreen.storyboard */; };
 		1FE6A93E1C9A3A17001C90CD /* MyCalcTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE6A93D1C9A3A17001C90CD /* MyCalcTests.swift */; };
 		1FE6A9491C9A3A17001C90CD /* MyCalcUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE6A9481C9A3A17001C90CD /* MyCalcUITests.swift */; };
+		1FE6A9571C9BC42F001C90CD /* PercentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE6A9561C9BC42F001C90CD /* PercentViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		1FE6A9441C9A3A17001C90CD /* MyCalcUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyCalcUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FE6A9481C9A3A17001C90CD /* MyCalcUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCalcUITests.swift; sourceTree = "<group>"; };
 		1FE6A94A1C9A3A17001C90CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1FE6A9561C9BC42F001C90CD /* PercentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PercentViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				1FE6A9281C9A3A15001C90CD /* AppDelegate.swift */,
 				1FE6A92A1C9A3A15001C90CD /* ViewController.swift */,
+				1FE6A9561C9BC42F001C90CD /* PercentViewController.swift */,
 				1FE6A92C1C9A3A15001C90CD /* Main.storyboard */,
 				1FE6A92F1C9A3A15001C90CD /* Assets.xcassets */,
 				1FE6A9311C9A3A15001C90CD /* LaunchScreen.storyboard */,
@@ -261,6 +264,7 @@
 			files = (
 				1FE6A92B1C9A3A15001C90CD /* ViewController.swift in Sources */,
 				1FE6A9291C9A3A15001C90CD /* AppDelegate.swift in Sources */,
+				1FE6A9571C9BC42F001C90CD /* PercentViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
