@@ -164,7 +164,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="7"/>
                                 <connections>
-                                    <action selector="tap7Button:" destination="rer-jp-6m4" eventType="touchUpInside" id="bl0-kS-mLs"/>
+                                    <action selector="tap7Button:" destination="rer-jp-6m4" eventType="touchUpInside" id="IzJ-TC-6nd"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="IJA-Pv-Vte">
@@ -172,7 +172,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="8"/>
                                 <connections>
-                                    <action selector="tap8Button:" destination="rer-jp-6m4" eventType="touchUpInside" id="5iU-Dn-5kO"/>
+                                    <action selector="tap8Button:" destination="rer-jp-6m4" eventType="touchUpInside" id="SZj-GS-4lb"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="gDq-Ww-acv">
@@ -180,7 +180,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="9"/>
                                 <connections>
-                                    <action selector="tap9Button:" destination="rer-jp-6m4" eventType="touchUpInside" id="LtK-go-beF"/>
+                                    <action selector="tap9Button:" destination="rer-jp-6m4" eventType="touchUpInside" id="HuA-0r-xMl"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Ot2-pB-BSo">
@@ -188,7 +188,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="4"/>
                                 <connections>
-                                    <action selector="tap4Button:" destination="rer-jp-6m4" eventType="touchUpInside" id="f4X-p0-wxp"/>
+                                    <action selector="tap4Button:" destination="rer-jp-6m4" eventType="touchUpInside" id="ZXA-Qi-SFk"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Ctf-fz-v2j">
@@ -197,7 +197,7 @@
                                 <state key="normal" title="5"/>
                                 <connections>
                                     <action selector="tap2Button:" destination="rer-jp-6m4" eventType="touchUpInside" id="7za-6G-xk8"/>
-                                    <action selector="tap5Button:" destination="rer-jp-6m4" eventType="touchUpInside" id="5op-jc-BnK"/>
+                                    <action selector="tap5Button:" destination="rer-jp-6m4" eventType="touchUpInside" id="60B-YC-ATk"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="r07-zv-u2A">
@@ -205,7 +205,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="6"/>
                                 <connections>
-                                    <action selector="tap6Button:" destination="rer-jp-6m4" eventType="touchUpInside" id="dRj-kO-4O2"/>
+                                    <action selector="tap6Button:" destination="rer-jp-6m4" eventType="touchUpInside" id="Fb4-RW-Lu3"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="FdK-pg-vEk">
@@ -221,7 +221,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="2"/>
                                 <connections>
-                                    <action selector="tap2Button:" destination="rer-jp-6m4" eventType="touchUpInside" id="cSy-xa-IAx"/>
+                                    <action selector="tap2Button:" destination="rer-jp-6m4" eventType="touchUpInside" id="pf1-6A-4Mb"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ePA-fj-kbS">
@@ -229,13 +229,16 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="3"/>
                                 <connections>
-                                    <action selector="tap3Button:" destination="rer-jp-6m4" eventType="touchUpInside" id="eRi-Jk-Oco"/>
+                                    <action selector="tap3Button:" destination="rer-jp-6m4" eventType="touchUpInside" id="tbC-27-dRy"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="cJL-ge-hlN">
                                 <rect key="frame" x="15" y="290" width="100" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="0"/>
+                                <connections>
+                                    <action selector="tap0Button:" destination="rer-jp-6m4" eventType="touchUpInside" id="8lV-EU-abM"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="j2G-iI-SG4">
                                 <rect key="frame" x="15" y="370" width="290" height="30"/>
@@ -254,9 +257,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="percentField" destination="LOP-nV-nsg" id="jHy-z6-szT"/>
                         <outlet property="priceField" destination="LOP-nV-nsg" id="qRF-gu-WlB"/>
                         <outlet property="tap1Button" destination="FdK-pg-vEk" id="dHL-dy-IMA"/>
                         <outlet property="tap2Button" destination="BBi-rB-5nX" id="cU9-MJ-IPv"/>
+                        <outlet property="tapClearButton" destination="SnY-QK-sPs" id="Fsw-Wh-Icp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Srf-hY-lrR" sceneMemberID="firstResponder"/>
