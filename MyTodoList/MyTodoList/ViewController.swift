@@ -59,7 +59,14 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         //アラートダイアログを表示
         presentViewController(alertController, animated: true, completion: nil)
     }
+    
     //テーブルの行数を返却する
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        //todoの配列の長さを返却する
+        return todoList.count
+    }
+    
+    //テーブルの行ごとのセルを返却する
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         //storyboardで指定したtodoCell識別子を利用して再利用可能なセルを取得する
         let cell = tableView.dequeueReusableCellWithIdentifier("todoCell",forIndexPath: indexPath)
