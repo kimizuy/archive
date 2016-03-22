@@ -33,24 +33,26 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
                                                 preferredStyle: UIAlertControllerStyle.Alert)
         //テキストエリアを追加
         alertController.addTextFieldWithConfigurationHandler(nil)
+        
         //OKボタンを追加
-        let okAction = UIAlertAction(title: "OK",
-                                     style: UIAlertActionStyle.Default){
-                                        (action:UIAlertAction) -> void in
-        //OKボタンが押されたときの処理
-                                        if let textField = alertController.textFields?.first{
-                                            //TODOの配列に入力した値を挿入。先頭に挿入する
-                                            self.todoList.insert(textField.text!, atIndex: 0)
-                                            
-                                            //テーブルに行が追加されたことをテーブルに通知
-                                            self.tableView.insertRowsAtIndexPaths([NSIndexPath(forRow: 0, inSection: 0)], withRowAnimation: UITableViewRowAnimation.Right)
-                                        }
+        let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default){
+            (action:UIAlertAction) -> Void in
+            //OKボタンが押されたときの処理
+            if let textField = alertController.textFields?.first{
+                //TODOの配列に入力した値を挿入。先頭に挿入する
+                self.todoList.insert(textField.text!, atIndex: 0)
+                
+                //テーブルに行が追加されたことをテーブルに通知
+                self.tableView.insertRowsAtIndexPaths([NSIndexPath(forRow: 0, inSection: 0)], withRowAnimation: UITableViewRowAnimation.Right)
+            }
         }
+        
+        
         //OKボタンを追加
         alertController.addAction(okAction)
         
         //Canselボタンがタップされたときの処理
-        let cancelAction = UIAlertAction(title: "CANCEL", style: UIAlertActionStyle, handler: nil)
+        let cancelAction = UIAlertAction(title: "CANCEL", style: UIAlertActionStyle.Cancel, handler: nil)
         //CANCELボタンを追加
         alertController.addAction(cancelAction)
         
