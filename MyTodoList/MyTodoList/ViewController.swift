@@ -11,13 +11,23 @@ import UIKit
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     //TODOを格納した配列
-    var todoList = [String]()
+    var todoList = [MyTodo]()
     
     @IBOutlet weak var tableView: UITableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        //---------------
+        //読み込み処理を追加
+        //---------------
+        let userDefaults = NSUserDefaults.standardUserDefaults()
+        if let todoListData = userDefaults.objectForKey("todoList") as? NSData {
+            if let storedTodoList = NSKeyedUnarchiver.unarchiveObjectWithData(todoListData) as? [MyTodo] {
+                todoList.appendContentsOf(storedTodoList)
+            }
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -44,6 +54,24 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
                 
                 //テーブルに行が追加されたことをテーブルに通知
                 self.tableView.insertRowsAtIndexPaths([NSIndexPath(forRow: 0, inSection: 0)], withRowAnimation: UITableViewRowAnimation.Right)
+                
+                //---------------
+                //読み込み処理を追加
+                //---------------
+                let userDefaults = NSUserDefaults.standardUserDefaults()
+                userDefaults.setObject(self.todoList, forKey: "todoList")
+                userDefaults.synchronize()
+                
+                //---------------
+                //保存処理を追加
+                //---------------
+                //NSData型にシリアライズする
+                let data :NSData = NSKeyedArchiver.archivedDataWithRootObject(self.todoList)
+                
+                //NSUserDefaultsに保存
+                let userDefaults = NSUserDefaults.standardUserDefaults()
+                userDefaults.setObject(data, forKey: "todoList")
+                userDefaults.synchronize()
             }
         }
         
@@ -71,10 +99,38 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         //storyboardで指定したtodoCell識別子を利用して再利用可能なセルを取得する
         let cell = tableView.dequeueReusableCellWithIdentifier("todoCell",forIndexPath: indexPath)
         //行番号に合ったToDoのタイトルを取得
-        let todoTitle = todoList[indexPath.row]
-        //セルのラベルにToDoのタイトルをセット
-        cell.textLabel!.text = todoTitle
+        let todo = todoList[indexPath.row]
+        //セルのラベルにTodoのタイトルをセット
+        cell.textLabel!.text = todo.todoTitle
+        if todo.todoDone {
+            cell.accessoryType = UITableViewCellAccessoryType.Checkmark
+        } else {
+            cell.accessoryType = UITableViewCellAccessoryType.None
+        }
         return cell
+    }
+    
+    
+    //セルをタップしたときの処理
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let todo = todoList[indexPath.row]
+        if todo.todoDone {
+            //完了済みの場合は未完に変更
+            todo.todoDone = false
+        } else {
+            todo.todoDone = true
+        }
+        //セルの状態を変更
+        tableView.reloadRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.Fade)
+        
+        //データ保存
+        //NSData型にシリアライズする
+        let data :NSData = NSKeyedArchiver.archivedDataWithRootObject(todoList)
+        //NSUserDefaultsに保存
+        let userDefaults = NSUserDefaults.standardUserDefaults()
+        userDefaults.setObject(data, forKey: "todoList")
+        userDefaults.synchronize()
+        
     }
     
 }

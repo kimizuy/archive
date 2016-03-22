@@ -11,6 +11,7 @@
 		8B068F641CA130D600A3B75E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B068F631CA130D600A3B75E /* ViewController.swift */; };
 		8B068F691CA130D600A3B75E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B068F681CA130D600A3B75E /* Assets.xcassets */; };
 		8B068F6C1CA130D600A3B75E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B068F6A1CA130D600A3B75E /* LaunchScreen.storyboard */; };
+		8B8E37031CA18AEC00D9B27B /* MyTodo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8E37021CA18AEC00D9B27B /* MyTodo.swift */; };
 		8BF209541CA15FFF007701B6 /* Main.Storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BF209561CA15FFF007701B6 /* Main.Storyboard */; };
 /* End PBXBuildFile section */
 
@@ -21,6 +22,7 @@
 		8B068F681CA130D600A3B75E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B068F6B1CA130D600A3B75E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8B068F6D1CA130D600A3B75E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B8E37021CA18AEC00D9B27B /* MyTodo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTodo.swift; sourceTree = "<group>"; };
 		8BF209551CA15FFF007701B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.Storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -56,6 +58,7 @@
 			children = (
 				8B068F611CA130D600A3B75E /* AppDelegate.swift */,
 				8B068F631CA130D600A3B75E /* ViewController.swift */,
+				8B8E37021CA18AEC00D9B27B /* MyTodo.swift */,
 				8BF209561CA15FFF007701B6 /* Main.Storyboard */,
 				8B068F681CA130D600A3B75E /* Assets.xcassets */,
 				8B068F6A1CA130D600A3B75E /* LaunchScreen.storyboard */,
@@ -137,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B068F641CA130D600A3B75E /* ViewController.swift in Sources */,
+				8B8E37031CA18AEC00D9B27B /* MyTodo.swift in Sources */,
 				8B068F621CA130D600A3B75E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
