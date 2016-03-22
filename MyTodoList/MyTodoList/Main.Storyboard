@@ -8,7 +8,7 @@
         <!--View Controller-->
         <scene sceneID="dOn-kP-pIT">
             <objects>
-                <viewController id="caz-qQ-WW4" sceneMemberID="viewController">
+                <viewController id="caz-qQ-WW4" customClass="ViewController" customModule="MyTodoList" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="sbn-I7-q7R"/>
                         <viewControllerLayoutGuide type="bottom" id="AWt-Td-753"/>
@@ -54,9 +54,16 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="p56-rA-dev">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="7q3-3F-jrz"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="7q3-3F-jrz">
+                            <connections>
+                                <action selector="tapAddButton:" destination="caz-qQ-WW4" id="QPv-wJ-A15"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="tableView" destination="mv4-Jp-HIz" id="iKp-fW-Paz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cam-v9-Zxy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
