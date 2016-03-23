@@ -35,6 +35,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         // Dispose of any resources that can be recreated.
     }
     
+    
+    
     //+ボタンをタップした際に呼ばれる処理
     @IBAction func tapAddButton(sender: AnyObject){
         //アラートダイアログ作成
@@ -45,22 +47,20 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         alertController.addTextFieldWithConfigurationHandler(nil)
         
         //OKボタンを追加
-        let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default){
+        let okAction = UIAlertAction(title: "OK",
+                                     style: UIAlertActionStyle.Default){
             (action:UIAlertAction) -> Void in
+                                        
             //OKボタンが押されたときの処理
             if let textField = alertController.textFields?.first{
+                
                 //TODOの配列に入力した値を挿入。先頭に挿入する
-                self.todoList.insert(textField.text!, atIndex: 0)
+                let myTodo = MyTodo()
+                myTodo.todoTitle = textField.text
+                self.todoList.insert(myTodo, atIndex: 0)
                 
                 //テーブルに行が追加されたことをテーブルに通知
                 self.tableView.insertRowsAtIndexPaths([NSIndexPath(forRow: 0, inSection: 0)], withRowAnimation: UITableViewRowAnimation.Right)
-                
-                //---------------
-                //読み込み処理を追加
-                //---------------
-                let userDefaults = NSUserDefaults.standardUserDefaults()
-                userDefaults.setObject(self.todoList, forKey: "todoList")
-                userDefaults.synchronize()
                 
                 //---------------
                 //保存処理を追加
@@ -88,11 +88,15 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         presentViewController(alertController, animated: true, completion: nil)
     }
     
+    
+    
     //テーブルの行数を返却する
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         //todoの配列の長さを返却する
         return todoList.count
     }
+    
+    
     
     //テーブルの行ごとのセルを返却する
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -109,6 +113,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         }
         return cell
     }
+    
     
     
     //セルをタップしたときの処理
@@ -131,6 +136,32 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         userDefaults.setObject(data, forKey: "todoList")
         userDefaults.synchronize()
         
+    }
+    
+    
+    
+    func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+        return true
+    }
+    
+    
+    
+    func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        //削除処理かどうか
+        if editingStyle == .Delete {
+            //TODOリストから削除
+            todoList.removeAtIndex(indexPath.row)
+            //セルを削除
+            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.Fade)
+            //データ保存
+            //NSDta型にシリアライズ
+            let data :NSData = NSKeyedArchiver.archivedDataWithRootObject(todoList)
+            
+            //NSUserDefaultsに保存
+            let userDefaults = NSUserDefaults.standardUserDefaults()
+            userDefaults.setObject(data, forKey: "todoList")
+            userDefaults.synchronize()
+        }
     }
     
 }
