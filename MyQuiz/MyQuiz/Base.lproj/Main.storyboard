@@ -121,15 +121,25 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="correct" translatesAutoresizingMaskIntoConstraints="NO" id="c20-4f-wUU">
+                                <rect key="frame" x="86" y="233" width="202" height="202"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="incorrect" translatesAutoresizingMaskIntoConstraints="NO" id="kfI-mt-FwG">
+                                <rect key="frame" x="87" y="233" width="201" height="201"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="2tz-d9-Uld" firstAttribute="top" secondItem="MSy-Aa-Dvn" secondAttribute="bottom" constant="43" id="Cdv-Hs-Ke8"/>
+                            <constraint firstItem="c20-4f-wUU" firstAttribute="centerX" secondItem="2Vj-az-jeh" secondAttribute="centerX" id="DOK-tP-usC"/>
                             <constraint firstItem="ViW-GN-NJB" firstAttribute="top" secondItem="Lyf-M0-ik3" secondAttribute="bottom" constant="28" id="Ecd-0f-9jM"/>
                             <constraint firstItem="0tV-Mh-mA8" firstAttribute="top" secondItem="ViW-GN-NJB" secondAttribute="bottom" constant="8" symbolic="YES" id="H8A-Jk-5bS"/>
                             <constraint firstItem="MSy-Aa-Dvn" firstAttribute="top" secondItem="0tV-Mh-mA8" secondAttribute="bottom" constant="8" symbolic="YES" id="NLv-Wc-qVE"/>
                             <constraint firstItem="ViW-GN-NJB" firstAttribute="leading" secondItem="MSy-Aa-Dvn" secondAttribute="leading" id="S3O-nj-1ZE"/>
+                            <constraint firstItem="kfI-mt-FwG" firstAttribute="centerY" secondItem="2Vj-az-jeh" secondAttribute="centerY" id="TVO-Cz-ZeE"/>
                             <constraint firstItem="0tV-Mh-mA8" firstAttribute="leading" secondItem="2Vj-az-jeh" secondAttribute="leadingMargin" constant="33" id="aUa-ro-WdL"/>
+                            <constraint firstItem="c20-4f-wUU" firstAttribute="centerY" secondItem="2Vj-az-jeh" secondAttribute="centerY" id="iab-f5-r2W"/>
+                            <constraint firstItem="kfI-mt-FwG" firstAttribute="centerX" secondItem="2Vj-az-jeh" secondAttribute="centerX" id="jXh-xS-RLy"/>
                             <constraint firstItem="ViW-GN-NJB" firstAttribute="leading" secondItem="2Vj-az-jeh" secondAttribute="leadingMargin" constant="4" id="kVv-sf-GGk"/>
                             <constraint firstItem="0tV-Mh-mA8" firstAttribute="centerX" secondItem="MSy-Aa-Dvn" secondAttribute="centerX" id="pTp-aJ-7NH"/>
                             <constraint firstItem="0tV-Mh-mA8" firstAttribute="centerX" secondItem="2Vj-az-jeh" secondAttribute="centerX" id="s8Z-V7-7m5"/>
@@ -142,4 +152,8 @@
             <point key="canvasLocation" x="772.5" y="326.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="correct" width="202" height="202"/>
+        <image name="incorrect" width="201" height="201"/>
+    </resources>
 </document>
