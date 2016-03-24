@@ -35,6 +35,9 @@
                                 <state key="normal" title="START">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="AuS-cG-Ndp" kind="presentation" id="gVz-QP-cBA"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -56,7 +59,7 @@
         <!--View Controller-->
         <scene sceneID="KU1-pz-wkB">
             <objects>
-                <viewController id="AuS-cG-Ndp" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="question" id="AuS-cG-Ndp" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Lyf-M0-ik3"/>
                         <viewControllerLayoutGuide type="bottom" id="2tz-d9-Uld"/>
@@ -154,7 +157,7 @@
         <!--View Controller-->
         <scene sceneID="Kqd-bR-G6z">
             <objects>
-                <viewController id="cH5-8m-I7K" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="result" id="cH5-8m-I7K" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="G49-wu-l3P"/>
                         <viewControllerLayoutGuide type="bottom" id="1pg-4a-bh9"/>
