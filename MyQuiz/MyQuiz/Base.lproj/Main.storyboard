@@ -97,6 +97,9 @@
                                         <state key="normal" title="恐竜の化石">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="tapAnswer1Button:" destination="AuS-cG-Ndp" eventType="touchUpInside" id="MoD-no-Gz1"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uq6-VW-BaO">
                                         <rect key="frame" x="0.0" y="111" width="335" height="101"/>
@@ -105,6 +108,9 @@
                                         <state key="normal" title="スペースシャトル">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="tapAnswer2Button:" destination="AuS-cG-Ndp" eventType="touchUpInside" id="v8u-08-5AQ"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HKN-pr-Zxl">
                                         <rect key="frame" x="0.0" y="222" width="335" height="101"/>
@@ -113,6 +119,9 @@
                                         <state key="normal" title="タイムマシン">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="tapAnswer3Button:" destination="AuS-cG-Ndp" eventType="touchUpInside" id="5bU-hJ-cNO"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lsF-nL-TTf">
                                         <rect key="frame" x="0.0" y="333" width="335" height="101"/>
@@ -121,6 +130,9 @@
                                         <state key="normal" title="無人島">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="tapAnswer4Button:" destination="AuS-cG-Ndp" eventType="touchUpInside" id="c87-YB-Luc"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
