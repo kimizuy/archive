@@ -36,7 +36,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="AuS-cG-Ndp" kind="presentation" id="gVz-QP-cBA"/>
+                                    <segue destination="AuS-cG-Ndp" kind="presentation" id="1U4-JJ-l2I"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -166,7 +166,7 @@
                         <outlet property="answer2Button" destination="uq6-VW-BaO" id="dpO-xI-5mf"/>
                         <outlet property="answer3Button" destination="HKN-pr-Zxl" id="bAX-FH-Ff9"/>
                         <outlet property="answer4Button" destination="lsF-nL-TTf" id="gCo-os-ANe"/>
-                        <outlet property="correctImageview" destination="c20-4f-wUU" id="8Xu-VP-Zc6"/>
+                        <outlet property="correctImageView" destination="c20-4f-wUU" id="t87-gE-MMw"/>
                         <outlet property="incorrectImageView" destination="kfI-mt-FwG" id="CzX-QE-KwW"/>
                         <outlet property="questionNoLabel" destination="ViW-GN-NJB" id="ZK7-zr-HDb"/>
                         <outlet property="questionTextView" destination="0tV-Mh-mA8" id="AQe-Pp-CF0"/>
@@ -224,6 +224,9 @@
                                 <state key="normal" title="タイトルへ戻る">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="8qy-zS-t8D" kind="unwind" unwindAction="goToTitle:" id="qvY-wy-Fls"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -236,8 +239,12 @@
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="correctPercentLabel" destination="4lW-7e-vrC" id="HED-VL-UJF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fz1-Lj-2Pt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="8qy-zS-t8D" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1190.5" y="325.5"/>
         </scene>

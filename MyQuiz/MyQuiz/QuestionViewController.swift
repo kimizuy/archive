@@ -20,7 +20,8 @@ class QuestionViewController: UIViewController {
     @IBOutlet weak var answer3Button: UIButton!
     @IBOutlet weak var answer4Button: UIButton!
     
-    @IBOutlet weak var correctImageview: UIImageView!
+    
+    @IBOutlet weak var correctImageView: UIImageView!
     @IBOutlet weak var incorrectImageView: UIImageView!
     
     override func viewDidLoad() {
@@ -78,11 +79,25 @@ class QuestionViewController: UIViewController {
         
         UIView.animateWithDuration(2.0, animations: { () -> Void in
             //アルファ値を1.0に変化させる(初期値はstoryboardで0.0に設定済み)
-            self.correctImageview.alpha = 1.0
+            self.correctImageView.alpha = 1.0
         }) { (Bool) -> Void in
             self.goNextQuestion()
         }
     }
+    
+    //次の問題に正解のアニメーション付きで遷移する
+    func goNextQuestionWithIncorrectAnimation() {
+        //正解を伝える音を鳴らす
+        AudioServicesPlayAlertSoundWithCompletion(1006, nil)
+        
+        UIView.animateWithDuration(2.0, animations: { () -> Void in
+            //アルファ値を1.0に変化させる(初期値はstoryboardで0.0に設定済み)
+            self.incorrectImageView.alpha = 1.0
+        }) { (Bool) -> Void in
+            self.goNextQuestion()
+        }
+    }
+
     
     //次の問題へ遷移する
     func goNextQuestion() {
@@ -109,45 +124,5 @@ class QuestionViewController: UIViewController {
             }
         }
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     
 }
