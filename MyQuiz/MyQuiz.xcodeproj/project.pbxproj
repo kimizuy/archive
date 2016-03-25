@@ -14,6 +14,8 @@
 		1FED3CC01CA3B73600495E6B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FED3CBE1CA3B73600495E6B /* LaunchScreen.storyboard */; };
 		1FED3CC81CA3C71800495E6B /* question.csv in Resources */ = {isa = PBXBuildFile; fileRef = 1FED3CC71CA3C71800495E6B /* question.csv */; };
 		1FED3CCA1CA3F6D800495E6B /* QuestionDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FED3CC91CA3F6D800495E6B /* QuestionDataManager.swift */; };
+		1FED3CCC1CA506F400495E6B /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FED3CCB1CA506F400495E6B /* QuestionViewController.swift */; };
+		1FED3CCE1CA5073D00495E6B /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FED3CCD1CA5073D00495E6B /* AudioToolbox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		1FED3CC11CA3B73600495E6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1FED3CC71CA3C71800495E6B /* question.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question.csv; sourceTree = "<group>"; };
 		1FED3CC91CA3F6D800495E6B /* QuestionDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionDataManager.swift; sourceTree = "<group>"; };
+		1FED3CCB1CA506F400495E6B /* QuestionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
+		1FED3CCD1CA5073D00495E6B /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FED3CCE1CA5073D00495E6B /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,7 @@
 		1FED3CA91CA3B73500495E6B = {
 			isa = PBXGroup;
 			children = (
+				1FED3CCD1CA5073D00495E6B /* AudioToolbox.framework */,
 				1FED3CB41CA3B73600495E6B /* MyQuiz */,
 				1FED3CB31CA3B73600495E6B /* Products */,
 			);
@@ -66,6 +72,7 @@
 				1FED3CC11CA3B73600495E6B /* Info.plist */,
 				1FED3CC71CA3C71800495E6B /* question.csv */,
 				1FED3CC91CA3F6D800495E6B /* QuestionDataManager.swift */,
+				1FED3CCB1CA506F400495E6B /* QuestionViewController.swift */,
 			);
 			path = MyQuiz;
 			sourceTree = "<group>";
@@ -145,6 +152,7 @@
 			files = (
 				1FED3CB81CA3B73600495E6B /* ViewController.swift in Sources */,
 				1FED3CB61CA3B73600495E6B /* AppDelegate.swift in Sources */,
+				1FED3CCC1CA506F400495E6B /* QuestionViewController.swift in Sources */,
 				1FED3CCA1CA3F6D800495E6B /* QuestionDataManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

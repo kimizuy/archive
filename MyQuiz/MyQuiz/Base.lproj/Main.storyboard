@@ -56,10 +56,10 @@
             </objects>
             <point key="canvasLocation" x="341.5" y="326.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Question View Controller-->
         <scene sceneID="KU1-pz-wkB">
             <objects>
-                <viewController storyboardIdentifier="question" id="AuS-cG-Ndp" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="question" id="AuS-cG-Ndp" customClass="QuestionViewController" customModule="MyQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Lyf-M0-ik3"/>
                         <viewControllerLayoutGuide type="bottom" id="2tz-d9-Uld"/>
@@ -149,6 +149,16 @@
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="answer1Button" destination="aJi-e5-wBw" id="JLl-rv-dYB"/>
+                        <outlet property="answer2Button" destination="uq6-VW-BaO" id="dpO-xI-5mf"/>
+                        <outlet property="answer3Button" destination="HKN-pr-Zxl" id="bAX-FH-Ff9"/>
+                        <outlet property="answer4Button" destination="lsF-nL-TTf" id="gCo-os-ANe"/>
+                        <outlet property="correctImageview" destination="c20-4f-wUU" id="8Xu-VP-Zc6"/>
+                        <outlet property="incorrectImageView" destination="kfI-mt-FwG" id="CzX-QE-KwW"/>
+                        <outlet property="questionNoLabel" destination="ViW-GN-NJB" id="ZK7-zr-HDb"/>
+                        <outlet property="questionTextView" destination="0tV-Mh-mA8" id="AQe-Pp-CF0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fuj-X2-Xp8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
