@@ -176,10 +176,10 @@
             </objects>
             <point key="canvasLocation" x="772.5" y="326.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Result View Controller-->
         <scene sceneID="Kqd-bR-G6z">
             <objects>
-                <viewController storyboardIdentifier="result" id="cH5-8m-I7K" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="result" id="cH5-8m-I7K" customClass="ResultViewController" customModule="MyQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="G49-wu-l3P"/>
                         <viewControllerLayoutGuide type="bottom" id="1pg-4a-bh9"/>

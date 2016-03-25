@@ -16,6 +16,8 @@
 		1FED3CCA1CA3F6D800495E6B /* QuestionDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FED3CC91CA3F6D800495E6B /* QuestionDataManager.swift */; };
 		1FED3CCC1CA506F400495E6B /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FED3CCB1CA506F400495E6B /* QuestionViewController.swift */; };
 		1FED3CCE1CA5073D00495E6B /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FED3CCD1CA5073D00495E6B /* AudioToolbox.framework */; };
+		1FED3CD01CA51C0600495E6B /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FED3CCF1CA51C0600495E6B /* ResultViewController.swift */; };
+		1FED3CD21CA51DCE00495E6B /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FED3CD11CA51DCE00495E6B /* StartViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		1FED3CC91CA3F6D800495E6B /* QuestionDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionDataManager.swift; sourceTree = "<group>"; };
 		1FED3CCB1CA506F400495E6B /* QuestionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 		1FED3CCD1CA5073D00495E6B /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		1FED3CCF1CA51C0600495E6B /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		1FED3CD11CA51DCE00495E6B /* StartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +76,9 @@
 				1FED3CC11CA3B73600495E6B /* Info.plist */,
 				1FED3CC71CA3C71800495E6B /* question.csv */,
 				1FED3CC91CA3F6D800495E6B /* QuestionDataManager.swift */,
+				1FED3CD11CA51DCE00495E6B /* StartViewController.swift */,
 				1FED3CCB1CA506F400495E6B /* QuestionViewController.swift */,
+				1FED3CCF1CA51C0600495E6B /* ResultViewController.swift */,
 			);
 			path = MyQuiz;
 			sourceTree = "<group>";
@@ -150,10 +156,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FED3CD01CA51C0600495E6B /* ResultViewController.swift in Sources */,
 				1FED3CB81CA3B73600495E6B /* ViewController.swift in Sources */,
 				1FED3CB61CA3B73600495E6B /* AppDelegate.swift in Sources */,
 				1FED3CCC1CA506F400495E6B /* QuestionViewController.swift in Sources */,
 				1FED3CCA1CA3F6D800495E6B /* QuestionDataManager.swift in Sources */,
+				1FED3CD21CA51DCE00495E6B /* StartViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
