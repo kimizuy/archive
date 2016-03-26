@@ -20,7 +20,7 @@
                             <textInputTraits key="textInputTraits"/>
                         </searchBar>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="itemCell" rowHeight="120" id="AVz-CM-zaN">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="itemCell" rowHeight="120" id="AVz-CM-zaN" customClass="itemTableViewCell" customModule="MySearchApp" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="136" width="375" height="120"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="AVz-CM-zaN" id="iIq-oe-GMX">
@@ -63,7 +63,10 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="nSc-AF-DFS" kind="show" id="WXl-ea-UTV"/>
+                                    <outlet property="itemImageView" destination="Psc-Tn-qV1" id="UZO-r5-6F7"/>
+                                    <outlet property="itemPriceLabel" destination="oEf-Wy-VES" id="dkF-0U-k3u"/>
+                                    <outlet property="itemTitleLabel" destination="IyJ-cG-zW5" id="TUO-nd-Hsa"/>
+                                    <segue destination="nSc-AF-DFS" kind="show" id="8I2-bJ-tIa"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
