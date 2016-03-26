@@ -173,35 +173,70 @@ class SearchItemTableViewController: UITableViewController, UISearchBarDelegate 
     
     // MARK: - Table View Data Source
     //テーブルセルの取得処理
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("itemCell", forIndexPath: indexPath) as! itemTableViewCell
+        let itemData = itemDataArray[indexPath.row]
+        //商品タイトル設定処理
+        cell.itemTitleLabel.text = itemData.itemTitle
+        //商品価格設定処理(日本通貨の形式で設定する)
+        let number = NSNumber(integer: Int(itemData.itemPrice!)!)
+        cell.itemPriceLabel.text = priceFormat.stringFromNumber(number)
+        //商品のURL設定
+        cell.itemUrl = itemData.itemUrl
+        //画像の設定処理
+        //既にセルに設定されている画像と同じかどうかチェックする
+        //画像がまだ設定されていない場合に処理を行う
+        if let itemImageUrl = itemData.itemImageUrl {
+            //キャッシュの画像を取り出す
+            if let cacheImage = imageCache.objectForKey(itemImageUrl) as? UIImage {
+                //キャッシュの画像を設定
+                cell.itemImageView.image = cacheImage
+            } else {
+                //画像のダウンロード処理
+                let session = NSURLSession.sharedSession()
+                if let url = NSURL(string: itemImageUrl) {
+                    let request = NSURLRequest(URL: url)
+                    let task = session.dataTaskWithRequest(request, completionHandler: {
+                        (data:NSData?, response:NSURLResponse?, error:NSError?) -> Void in
+                        if let data = data {
+                            if let image = UIImage(data: data) {
+                                //ダウンロードした画像をキャッシュに登録しておく
+                                self.imageCache.setObject(image, forKey: itemImageUrl)
+                                //画像はメインスレッド上で設定する
+                                dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                                cell.itemImageView.image = image
+                                })
+                            }
+                        }
+                    })
+                    //画像の読み込み処理開始
+                    task.resume()
+                }
+                
+            }
+        }
+        return cell
+        
+    }
     
+    //セクション数を取得
+    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 1
+    }
     
+    //アイテム数を取得
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return itemDataArray.count
+    }
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    //商品をタップして次の画面に遷移する処理
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if let cell = sender as? ItemTableViewCell {
+            if let webViewController = segue.destinationViewController as? WebViewController {
+                //商品ページのURLを設定する
+                webViewController.itemUrl = cell.itemUrl
+            }
+        }
+    }
     
 }

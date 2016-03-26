@@ -14,6 +14,7 @@
 		1FFBBB291CA6420000C612C0 /* ItemData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFBBB281CA6420000C612C0 /* ItemData.swift */; };
 		1FFBBB2D1CA6440500C612C0 /* itemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFBBB2C1CA6440500C612C0 /* itemTableViewCell.swift */; };
 		1FFBBB2F1CA6513A00C612C0 /* SearchItemTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFBBB2E1CA6513A00C612C0 /* SearchItemTableViewController.swift */; };
+		1FFBBB351CA6CAD400C612C0 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFBBB341CA6CAD400C612C0 /* WebViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		1FFBBB281CA6420000C612C0 /* ItemData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemData.swift; sourceTree = "<group>"; };
 		1FFBBB2C1CA6440500C612C0 /* itemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = itemTableViewCell.swift; sourceTree = "<group>"; };
 		1FFBBB2E1CA6513A00C612C0 /* SearchItemTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchItemTableViewController.swift; sourceTree = "<group>"; };
+		1FFBBB341CA6CAD400C612C0 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				1FFBBB281CA6420000C612C0 /* ItemData.swift */,
 				1FFBBB2C1CA6440500C612C0 /* itemTableViewCell.swift */,
 				1FFBBB2E1CA6513A00C612C0 /* SearchItemTableViewController.swift */,
+				1FFBBB341CA6CAD400C612C0 /* WebViewController.swift */,
 			);
 			path = MySearchApp;
 			sourceTree = "<group>";
@@ -145,6 +148,7 @@
 				1FFBBB2F1CA6513A00C612C0 /* SearchItemTableViewController.swift in Sources */,
 				1FFBBB2D1CA6440500C612C0 /* itemTableViewCell.swift in Sources */,
 				1FFBBB291CA6420000C612C0 /* ItemData.swift in Sources */,
+				1FFBBB351CA6CAD400C612C0 /* WebViewController.swift in Sources */,
 				1F2E2E521CA58EB90008F815 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
