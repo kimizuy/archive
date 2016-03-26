@@ -127,7 +127,52 @@ class SearchItemTableViewController: UITableViewController, UISearchBarDelegate 
     
     
     //検索結果をパースして商品リストを作成する
+    func parseData(resultSet: [String:AnyObject]){
+        if let firstObject = resultSet["0"] as? [String:AnyObject] {
+            if let results = firstObject["Result"] as? [String:AnyObject] {
+                for key in results.keys.sort() {
+                    
+                    //Requestのキーは無視する
+                    if key == "Request" {
+                        continue
+                    }
+                    
+                    //商品アイテム取得処理
+                    if  let result = results[key] as? [String:AnyObject] {
+                        //商品データ格納オブジェクトを作成
+                        let itemData = ItemData()
+                        
+                        //画像を格納
+                        if let itemImageDic = result["Image"] as? [String:AnyObject] {
+                            let itemImageUrl = itemImageDic["Medium"] as? String
+                            itemData.itemImageUrl = itemImageUrl
+                        }
+                        
+                        //商品タイトルを格納
+                        let itemTitle = result["Name"] as? String   //商品名
+                        itemData.itemTitle = itemTitle
+                        
+                        //商品価格を格納
+                        if let itemPriceDic = result["Price"] as? [String:AnyObject] {
+                            let itemPrice = itemPriceDic["_value"] as? String
+                            itemData.itemPrice = itemPrice
+                        }
+                        
+                        //商品のURLを格納
+                        let itemUrl = result["Url"] as? String
+                        itemData.itemUrl = itemUrl
+                        
+                        //商品リストに追加
+                        self.itemDataArray.append(itemData)
+                    }
+                }
+            }
+        }
+    }
     
+    
+    // MARK: - Table View Data Source
+    //テーブルセルの取得処理
     
     
     
