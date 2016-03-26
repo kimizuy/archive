@@ -174,7 +174,7 @@ class SearchItemTableViewController: UITableViewController, UISearchBarDelegate 
     // MARK: - Table View Data Source
     //テーブルセルの取得処理
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("itemCell", forIndexPath: indexPath) as! itemTableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("itemCell", forIndexPath: indexPath) as! ItemTableViewCell
         let itemData = itemDataArray[indexPath.row]
         //商品タイトル設定処理
         cell.itemTitleLabel.text = itemData.itemTitle
