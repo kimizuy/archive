@@ -6,10 +6,10 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller-->
+        <!--Search Item Table View Controller-->
         <scene sceneID="Lpu-2y-HOz">
             <objects>
-                <tableViewController id="y3t-Mt-lKp" sceneMemberID="viewController">
+                <tableViewController id="y3t-Mt-lKp" customClass="SearchItemTableViewController" customModule="MySearchApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="kbp-Pj-FSG">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
