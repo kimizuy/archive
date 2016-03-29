@@ -33,17 +33,21 @@ class PhotoViewController: UIViewController {
     }
     
     @IBAction func tapTrashButton(sender: AnyObject) {
+        
         let alertController = UIAlertController(title: "写真の削除", message: "この写真を削除します。よろしいですか？", preferredStyle: UIAlertControllerStyle.Alert)
-        let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default) {
-            (action:UIAlertAction) -> Void in
-            //OKボタンが押されたときの処理
+        let okAction = UIAlertAction(title: "はい", style: UIAlertActionStyle.Default, handler:{
+            (action:UIAlertAction!) -> Void in
             
-        }
+            
+            //一覧画面に戻る
+            self.navigationController?.popViewControllerAnimated(true)
+            
+        })
         //OKボタンを追加
         alertController.addAction(okAction)
         
         //CANCELボタンがタップされたときの処理
-        let cancelButton = UIAlertAction(title: "CANCEL", style: UIAlertActionStyle.Cancel, handler: nil)
+        let cancelButton = UIAlertAction(title: "いいえ", style: UIAlertActionStyle.Cancel, handler: nil)
         //CANCELボタンを追加
         alertController.addAction(cancelButton)
         
