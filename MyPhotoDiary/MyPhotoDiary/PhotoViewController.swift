@@ -1,6 +1,6 @@
 //
 //  PhotoViewController.swift
-//  PhotoDiary
+//  MyPhotoDiary
 //
 //  Created by Kimizu Yamasaki on 2016/03/26.
 //  Copyright © 2016年 Kimizu Yamasaki. All rights reserved.
@@ -30,5 +30,25 @@ class PhotoViewController: UIViewController {
     
     func photoPath(id: String) -> String {
         return documentsDir + "/" + id + ".jpg"
+    }
+    
+    @IBAction func tapTrashButton(sender: AnyObject) {
+        let alertController = UIAlertController(title: "写真の削除", message: "この写真を削除します。よろしいですか？", preferredStyle: UIAlertControllerStyle.Alert)
+        let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default) {
+            (action:UIAlertAction) -> Void in
+            //OKボタンが押されたときの処理
+            
+        }
+        //OKボタンを追加
+        alertController.addAction(okAction)
+        
+        //CANCELボタンがタップされたときの処理
+        let cancelButton = UIAlertAction(title: "CANCEL", style: UIAlertActionStyle.Cancel, handler: nil)
+        //CANCELボタンを追加
+        alertController.addAction(cancelButton)
+        
+        //アラートダイアログを表示
+        presentViewController(alertController, animated: true, completion: nil)
+        
     }
 }

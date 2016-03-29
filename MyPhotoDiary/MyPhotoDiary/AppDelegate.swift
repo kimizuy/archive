@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  PhotoDiary
+//  MyPhotoDiary
 //
 //  Created by Kimizu Yamasaki on 2016/03/26.
 //  Copyright © 2016年 Kimizu Yamasaki. All rights reserved.

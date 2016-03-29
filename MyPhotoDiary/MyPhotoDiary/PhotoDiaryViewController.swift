@@ -1,6 +1,6 @@
 //
 //  PhotoDiaryViewController.swift
-//  PhotoDiary
+//  MyPhotoDiary
 //
 //  Created by Kimizu Yamasaki on 2016/03/26.
 //  Copyright © 2016年 Kimizu Yamasaki. All rights reserved.
@@ -22,7 +22,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         
         loadItems()
         
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "saveItems:", name: UIApplicationWillTerminateNotification, object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(ViewController.saveItems(_:)), name: UIApplicationWillTerminateNotification, object: nil)
     }
     
     func dataPath() -> String {
