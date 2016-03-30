@@ -34,7 +34,7 @@ class PhotoViewController: UIViewController {
     
     @IBAction func tapTrashButton(sender: AnyObject) {
         
-        let alertController = UIAlertController(title: "写真の削除", message: "この写真を削除します。よろしいですか？", preferredStyle: UIAlertControllerStyle.Alert)
+        let alertController = UIAlertController(title: "確認", message: "この写真を削除します。よろしいですか？", preferredStyle: UIAlertControllerStyle.Alert)
         let okAction = UIAlertAction(title: "はい", style: UIAlertActionStyle.Default, handler:{
             (action:UIAlertAction!) -> Void in
             
