@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class ViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, UIImagePickerControllerDelegate, UINavigationControllerDelegate, PhotoViewControllerDelegate {
 
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var photoButton: UIButton!
@@ -85,6 +85,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("PhotoViewController") as! PhotoViewController
         vc.item = items[indexPath.row]
+        vc.delegate = self
         navigationController?.pushViewController(vc, animated: true)
     }
     
@@ -118,5 +119,18 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         
         items.append(dict)
         collectionView.reloadData()
+    }
+    
+    func deletePhoto(item:AnyObject) {
+        
+        // TODO: NSKeyArchiver内を検索してitemがヒットしたらremoveするメソッドをしらべて書く
+        
+        print("delete!")
+    }
+    
+    // MARK:-
+    // MARK:PhotoViewControllerDelegate
+    func photoViewController (viewController: PhotoViewController, item: AnyObject) {
+        deletePhoto(item)
     }
 }

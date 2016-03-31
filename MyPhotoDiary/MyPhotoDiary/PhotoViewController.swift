@@ -8,9 +8,16 @@
 
 import UIKit
 
+// プロトコルを作る。
+protocol PhotoViewControllerDelegate {
+    func photoViewController (viewController: PhotoViewController, item: AnyObject)
+}
+
 class PhotoViewController: UIViewController {
     var item: [String: AnyObject]?
     let documentsDir = NSHomeDirectory() + "/Documents"
+    
+    var delegate:PhotoViewControllerDelegate!
     
     @IBOutlet weak var photoImageView: UIImageView!
     
@@ -33,14 +40,15 @@ class PhotoViewController: UIViewController {
     }
     
     @IBAction func tapTrashButton(sender: AnyObject) {
+        //let viewController = ViewController()
+        
         
         let alertController = UIAlertController(title: "確認", message: "この写真を削除します。よろしいですか？", preferredStyle: UIAlertControllerStyle.Alert)
         let okAction = UIAlertAction(title: "はい", style: UIAlertActionStyle.Default, handler:{
             (action:UIAlertAction!) -> Void in
             
-            
-            //一覧画面に戻る
-            self.navigationController?.popViewControllerAnimated(true)
+            // if respondstoselecterをswiftで書く。trueならself.delegateのメソッドを呼び出すコード
+            self.delegate.photoViewController(self, item: self.item!)
             
         })
         //OKボタンを追加
@@ -55,4 +63,5 @@ class PhotoViewController: UIViewController {
         presentViewController(alertController, animated: true, completion: nil)
         
     }
+    
 }
