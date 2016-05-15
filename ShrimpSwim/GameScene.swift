@@ -8,7 +8,10 @@
 
 import SpriteKit
 
-class GameScene: SKScene {
+class GameScene: SKScene, SKPhysicsContactDelegate {
+    
+    var scoreLabelNode: SKLabelNode!
+    var score: UInt32!
     
     var player: SKSpriteNode!
     
@@ -19,7 +22,7 @@ class GameScene: SKScene {
     
     struct ColliderType {
         //staticは静的を意味し、そのクラス(または構造体)のインスタンスを作成しなくてもアクセスできるもの
-        static let player: UInt32 = (1 << 0)
+        static let Player: UInt32 = (1 << 0)
         static let World: UInt32 = (1 << 1)
         static let Colal: UInt32 = (1 << 2)
         static let Score: UInt32 = (1 << 3)
@@ -30,8 +33,11 @@ class GameScene: SKScene {
     var coralNode: SKNode!
     
     override func didMoveToView(view: SKView) {
+        //スコアラベルの変数の初期化
+        score = 0
         //物理シミュレーションを設定
         self.physicsWorld.gravity = CGVector(dx: 0.0, dy: -2.0)
+        self.physicsWorld.contactDelegate = self
         //全ノードの親となるノードを生成
         baseNode = SKNode()
         baseNode.speed = 1.0
@@ -47,6 +53,14 @@ class GameScene: SKScene {
         self.setupCeilingAndLand()
         //プレイキャラを構築
         self.setupPlayer()
+        //障害物のサンゴを構築
+        self.setupCoral()
+        //スコアラベルを構築
+        self.setupScoreLabel()
+    }
+    
+    func didBeginContact(contact: SKPhysicsContact) {
+        print("当たった")
     }
     
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
@@ -179,12 +193,81 @@ class GameScene: SKScene {
         player.physicsBody?.dynamic = true
         player.physicsBody?.allowsRotation = false
         //自分自身にplayerカテゴリを設定
-        player.physicsBody?.categoryBitMask = ColliderType.player
+        player.physicsBody?.categoryBitMask = ColliderType.Player
         //衝突判定相手にWorldとCoralを設定
         //「 | 」は論理和
         player.physicsBody?.collisionBitMask = ColliderType.World | ColliderType.Colal
         player.physicsBody?.contactTestBitMask = ColliderType.World | ColliderType.Colal
         
         self.addChild(player)
+    }
+    
+    func setupCoral() {
+        //サンゴ画像を読み込み
+        let coralUnder = SKTexture(imageNamed: "coral_under")
+        coralUnder.filteringMode = .Linear
+        let coralAbove = SKTexture(imageNamed: "coral_above")
+        coralAbove.filteringMode = .Linear
+        //移動する距離を算出
+        let distanceToMove = CGFloat(self.frame.size.width + 2.0 * coralUnder.size().width)
+        //アニメーションを作成
+        let moveAnim = SKAction.moveByX(-distanceToMove, y: 0.0, duration: NSTimeInterval(distanceToMove / 100.0))
+        let removeAnim = SKAction.removeFromParent()
+        let coralAnim = SKAction.sequence([moveAnim, removeAnim])
+        //サンゴを生成するメソッドを呼び出すアニメーションを作成
+        let newCoralAnim = SKAction.runBlock({
+            //サンゴに関するノードを乗せるノードを作成
+            let coral = SKNode()
+            coral.position = CGPoint(x: self.frame.width + coralUnder.size().width * 2, y: 0.0)
+            coral.zPosition = -40.0
+            
+            //地面から伸びるサンゴのy座標を算出
+            let height = UInt32(self.frame.size.height / 12)
+            let y = CGFloat(arc4random_uniform(height * 2) + height)
+            //地面から伸びるサンゴを生成
+            let under = SKSpriteNode(texture: coralUnder)
+            under.position = CGPoint(x: 0.0, y: y)
+            //サンゴに物理シミュレーションを設定
+            under.physicsBody = SKPhysicsBody(texture: coralUnder, size: under.size)
+            under.physicsBody?.dynamic = false
+            under.physicsBody?.categoryBitMask = ColliderType.Colal
+            under.physicsBody?.contactTestBitMask = ColliderType.Player
+            coral.addChild(under)
+            
+            //天井から伸びるサンゴを作成
+            let above = SKSpriteNode(texture: coralAbove)
+            above.position = CGPoint(x: 0.0, y: y + (under.size.height / 2.0) + 160.0 + (above.size.height / 2.0))
+            //サンゴに物理シミュレーションを設定
+            above.physicsBody = SKPhysicsBody(texture: coralAbove, size: above.size)
+            above.physicsBody?.dynamic = false
+            above.physicsBody?.categoryBitMask = ColliderType.Colal
+            above.physicsBody?.contactTestBitMask = ColliderType.Player
+            coral.addChild(above)
+            //スコアをカウントアップするノードを作成
+            let scoreNode = SKNode()
+            scoreNode.position = CGPoint(x: (above.size.width / 2.0) + 5.0, y: self.frame.height / 2.0)
+            //スコアノードに物理シミュレーションを設定
+            scoreNode.physicsBody = SKPhysicsBody(rectangleOfSize: CGSize(width: 10.0, height: self.frame.size.height))
+            scoreNode.physicsBody?.dynamic = false
+            scoreNode.physicsBody?.categoryBitMask = ColliderType.Score
+            scoreNode.physicsBody?.contactTestBitMask = ColliderType.Player
+            coral.addChild(scoreNode)
+            
+            coral.runAction(coralAnim)
+            self.coralNode.addChild(coral)
+        })
+        let delayAnim = SKAction.waitForDuration(2.5)
+        let repeatForeverAnim = SKAction.repeatActionForever(SKAction.sequence([newCoralAnim, delayAnim]))
+        self.runAction(repeatForeverAnim)
+    }
+    
+    func setupScoreLabel() {
+        //フォント名"Arial Bold"でラベルを作成
+        scoreLabelNode = SKLabelNode(fontNamed: "Arial Bold")
+        scoreLabelNode.fontColor = UIColor.blackColor()
+        scoreLabelNode.position = CGPoint(x: self.frame.width / 2.0, y: self.frame.size.height * 0.9)
+        scoreLabelNode.zPosition = 100.0
+        scoreLabelNode.text = String(score)
+        self.addChild(scoreLabelNode)
     }
 }
