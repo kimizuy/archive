@@ -1,15 +1,10 @@
-from django.http import HttpResponse
 from django.shortcuts import render
 
-def index(request):
-    return render(request, 'templates/index.html', {'title': 'Hello World'})
+def render_form(request):
+    return render(request, 'login.html')
 
-def hoge(request):
-    return HttpResponse("Hoge")
-
-def fuga(request, foo):
-    return render(request, 'templates/index.html', {'title': foo})
-
-def search(request):
-    q = request.GET.get('q')
-    return HttpResponse(q)
+def login(request):
+    if request.POST['username'] and request.POST['email']:
+        return render(request, 'check.html', {"username": request.POST['username'], "email": request.POST['email']})
+    else:
+        return render(request, 'error.html')
