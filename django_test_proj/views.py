@@ -1,5 +1,6 @@
 from django.http import HttpResponse
 from django.shortcuts import render
+from hashlib import md5
 
 
 def index(request):
@@ -24,11 +25,13 @@ def form(request):
 
 
 def upload(request):
-    if request.method == 'POST' and request.FILES and request.FILES['image']:
-        binary = request.FILES['image']
-        image = open('static/hoge.png', 'wb')
-        for chunk in binary.chunks():
+    if request.method == 'POST' and request.FILES['image'] and (request.FILES['image'].content_type == "image/png" or request.FILES['image'].content_type == "image/jpeg"):
+        extention = ".jpg"
+        if request.FILES['image'].content_type == "image/png":
+            extention = ".png"
+        print(request.FILES['image'].name)
+        filepath = 'static/' + md5(request.FILES['image'].name.encode('utf-8')).hexdigest() + extention
+        image = open(filepath, 'wb')
+        for chunk in request.FILES['image'].chunks():
             image.write(chunk)
-        return render(request, 'result.html')
-    else:
-        return HttpResponseRedirect("/form")
+        return render(request, 'result.html', {'filepath': filepath, 'name': 'Hoge'})

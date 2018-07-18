@@ -7,8 +7,8 @@ urlpatterns = [
     path('', views.index),
     path('hoge/', include('hoge.urls')),
     path('fuga/<foo>', views.fuga),
-    path('search', views.search),
-    path('form', views.form),
     path('upload', views.upload),
+    path('form', views.form),
+    path('search', views.search),
     path('admin/', admin.site.urls)
 ]
