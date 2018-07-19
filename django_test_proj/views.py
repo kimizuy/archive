@@ -2,27 +2,21 @@ from django.http import HttpResponse
 from django.shortcuts import render
 from hashlib import md5
 
-
 def index(request):
     return render(request, 'index.html', {'title': 'Hello World'})
 
-
 def hoge(request):
     return HttpResponse("Hoge")
-
 
 def search(request):
     q = request.GET.get('q')
     return HttpResponse(q)
 
-
 def fuga(request, foo):
     return render(request, 'index.html', {'title': foo})
 
-
 def form(request):
     return render(request, 'form.html')
-
 
 def upload(request):
     if request.method == 'POST' and request.FILES['image'] and (request.FILES['image'].content_type == "image/png" or request.FILES['image'].content_type == "image/jpeg"):
