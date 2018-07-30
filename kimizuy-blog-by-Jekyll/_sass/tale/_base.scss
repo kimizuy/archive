@@ -1,3 +1,5 @@
+@import "../ff";
+
 * {
   @include box-sizing;
   line-height: 1.5;
@@ -11,7 +13,8 @@ body {
 }
 
 html {
-  font-family: $serif-primary;
+  //font-family: $serif-primary;
+  @include ff;
   font-size: 14px;
   overflow-y: scroll;
 
@@ -31,7 +34,8 @@ h4,
 h5,
 h6 {
   color: $default-shade;
-  font-family: $sans-serif;
+  //font-family: $sans-serif;
+  @include ff;
   line-height: normal;
 }
 

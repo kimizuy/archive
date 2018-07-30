@@ -1,3 +1,5 @@
+@import "../ff";
+
 .catalogue {
   &-item {
     border-bottom: 1px solid $grey-2;
@@ -24,7 +26,8 @@
   &-title {
     color: $default-shade;
     display: block;
-    font-family: $sans-serif;
+    //font-family: $sans-serif;
+    @include ff;
     font-size: 2rem;
     font-weight: 700;
     margin: .5rem 0;
