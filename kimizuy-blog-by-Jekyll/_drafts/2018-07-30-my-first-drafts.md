@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "【Mac】 jpgなどの画像ファイルを余白なくpdfに変換するtips"
+title:  "【Mac】 jpgなどの画像ファイルを余白なしでpdfに変換するtips"
 author: "kimizuy"
 ---
 
