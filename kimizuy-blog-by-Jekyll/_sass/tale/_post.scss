@@ -20,6 +20,7 @@
     font-size: 2rem; //4rem;
     margin: 1rem 0;
     text-align: center;
+    letter-spacing: 2pt;
   }
 
   &-line {
@@ -32,11 +33,13 @@
   p {
     margin: 0 0 1rem;
     text-align: justify;
-    line-height: 175%
+    line-height: 175%;
+    letter-spacing: 0.7pt;
   }
 
   li {
-    line-height: 175%
+    line-height: 175%;
+    letter-spacing: 0.7pt;
   }
 
   a:hover {

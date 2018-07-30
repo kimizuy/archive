@@ -31,6 +31,8 @@
     font-size: 2rem;
     font-weight: 700;
     margin: .5rem 0;
+
+    letter-spacing: 0.7pt;
   }
 
   &-line {
@@ -38,5 +40,9 @@
     border-top: .2rem solid $default-shade;
     display: block;
     width: 2rem;
+  }
+
+  p{
+    letter-spacing: 0.7pt;
   }
 }
