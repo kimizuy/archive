@@ -1,14 +1,14 @@
 # Site settings
-title:          Tale
-description:    "Minimal Jekyll theme for storytellers"
+title:          kimizuy blog
+description:    "kimizuyのブログです。"
 baseurl:        "/kimizuy_blog"
 url:            "https://kimizuy.github.io"
 
 # Author
 author:
-  name:         Chester How
-  url:          https://chester.how
-  email:        chesterhow@gmail.com
+  name:         kimizuy
+  url:          
+  email:        
 
 # Build settings
 markdown:       kramdown
