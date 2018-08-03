@@ -1,6 +1,5 @@
 .post {
-  padding: 3rem 0;
-
+  padding: 0.5rem 0;
   &-info {
     color: $default-tint;
     font-family: $serif-secondary;
@@ -16,9 +15,9 @@
     color: $default-shade;
     font-family: $mplus-1p;
     font-size: 2rem; //4rem;
-    margin: 1rem 0;
+    margin: 0.6rem 0;
     text-align: center;
-    letter-spacing: 1pt;
+    letter-spacing: 0.2rem;
   }
 
   &-line {
