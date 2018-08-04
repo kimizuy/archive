@@ -40,21 +40,6 @@ a {
   text-decoration: none;
 }
 
-blockquote {
-  border-left: .25rem solid $grey-2;
-  color: $grey-1;
-  margin: .8rem 0;
-  padding: .5rem 1rem;
-
-  p:last-child {
-    margin-bottom: 0;
-  }
-
-  @media (min-width: 600px) {
-    padding: 0 5rem 0 1.25rem;
-  }
-}
-
 img {
   display: block;
   margin: 0 0 1rem;
@@ -63,4 +48,64 @@ img {
 
 td {
   vertical-align: top;
+}
+
+
+//Own customize blockquote
+blockquote {
+  position: relative;
+  padding: 7px 16px;
+  box-sizing: border-box;
+  font-style: italic;
+  color: #585858;
+  border: solid 3px #585858;
+  margin: 3rem 0;
+}
+blockquote:before{
+  display: inline-block;
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  vertical-align: middle;
+  text-align: center;
+  content: "\f10d";
+  font-family: "Font Awesome 5 Free";
+  background: #585858;
+  color: #FFF;
+  font-size: 22px;
+}
+
+blockquote:after{
+  display: inline-block;
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  vertical-align: middle;
+  text-align: center;
+  content: "\f10e";
+  font-family: "Font Awesome 5 Free";
+  background: #585858;
+  color: #FFF;
+  font-size: 22px;
+}
+
+blockquote p {
+  padding: 0;
+  margin: 10px 0;
+  line-height: 1.7;
+}
+
+blockquote cite {
+  display: block;
+  text-align: right;
+  color: #888888;
+  font-size: 0.9em;
 }
