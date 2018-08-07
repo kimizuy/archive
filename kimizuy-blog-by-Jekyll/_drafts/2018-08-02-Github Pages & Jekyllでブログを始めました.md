@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "jekyllでブログを始めました。"
+title: "Github Pages & Jekyllでブログを始めました。"
 ---
 
 今さらながらGithub Pagesというブログホスティングサービスを知り、サポートされている静的サイトジェネレーター「jekyll」でブログをやってみることにした。  

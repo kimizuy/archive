@@ -24,12 +24,12 @@
   &-title {
     color: $default-shade;
     display: block;
-    font-family: $mplus-1p;
+    font-family: $kimizuy-font;
     font-size: 2rem;
     font-weight: 700;
     margin: .5rem 0;
 
-    letter-spacing: 0.12rem;
+    letter-spacing: 0.1em;
   }
 
   &-line {
@@ -40,6 +40,6 @@
   }
 
   p{
-    letter-spacing: 0.03rem;
+    letter-spacing: 0.05em;
   }
 }

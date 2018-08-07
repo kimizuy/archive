@@ -16,9 +16,6 @@ $serif-secondary: Palatino, 'Palatino LT STD', 'Palatino Linotype', 'Book Antiqu
 $sans-serif: 'Helvetica Neue', 'Segoe UI', Helvetica, Arial, sans-serif;
 $monospaced: Menlo, Monaco, monospace;
 
-//kimizuy's Fonts
-$mplus-1p: 'Mplus 1p', 'Yu Gothic', sans-serif;
-
 @mixin box-sizing($type: border-box) {
   -webkit-box-sizing: $type;
      -moz-box-sizing: $type;
@@ -30,3 +27,10 @@ $mplus-1p: 'Mplus 1p', 'Yu Gothic', sans-serif;
      -moz-transition: $args;
           transition: $args;
 }
+
+
+
+//kimizuy's Fonts
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
+$kimizuy-font: Lato, "Noto Sans JP", "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;

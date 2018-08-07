@@ -13,11 +13,11 @@
 
   &-title {
     color: $default-shade;
-    font-family: $mplus-1p;
-    font-size: 2rem; //4rem;
+    font-family: $kimizuy-font;
+    font-size: 2rem;
     margin: 0.6rem 0;
     text-align: center;
-    letter-spacing: 0.12rem;
+    letter-spacing: 0.1em;
   }
 
   &-line {
@@ -30,13 +30,13 @@
   p {
     margin: 0 0 1rem;
     text-align: justify;
-    line-height: 1.9;
-    letter-spacing: 0.03rem;
+    line-height: 2;
+    letter-spacing: 0.05em;
   }
 
   li {
     line-height: 1.9;
-    letter-spacing: 0.03rem;
+    letter-spacing: 0.05em;
   }
 
   a:hover {
