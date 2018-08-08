@@ -1,6 +1,6 @@
 * {
   @include box-sizing;
-  line-height: 1.9;
+  line-height: 2;
 }
 
 html,
@@ -61,6 +61,7 @@ blockquote {
   border: solid 3px #585858;
   margin: 3rem 0;
 }
+
 blockquote:before{
   display: inline-block;
   position: absolute;
