@@ -6,7 +6,14 @@ const {app, BrowserWindow} = require('electron')
   
   function createWindow () {
     // browser window を生成する
-    win = new BrowserWindow({width: 800, height: 600/*, transparent: true, frame: false*/})
+    win = new BrowserWindow({
+      width: 200,
+      height: 150,
+      transparent: true,
+      frame: false,
+      x: 0,
+      y: 0
+    })
   
     // アプリの index.html を読み込む
     win.loadFile('index.html')
