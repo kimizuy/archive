@@ -7,8 +7,6 @@ const {app, BrowserWindow} = require('electron')
   function createWindow () {
     // browser window を生成する
     win = new BrowserWindow({
-      width: 200,
-      height: 150,
       transparent: true,
       frame: false,
       x: 0,
