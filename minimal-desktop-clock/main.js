@@ -1,4 +1,23 @@
-const {app, BrowserWindow} = require('electron')
+const {app, BrowserWindow, Menu} = require('electron')
+
+//メニューの追加
+function createWindow () {
+
+  // Other code removed for brevity
+
+  var menu = Menu.buildFromTemplate([
+      {
+          label: 'Menu',
+          submenu: [
+              {label:'Adjust Notification Value'},
+              {label:'CoinMarketCap'},
+              {label:'Exit'}
+          ]
+      }
+  ])
+  Menu.setApplicationMenu(menu); 
+
+}
   
   // ウインドウオブジェクトのグローバル参照を保持してください。さもないと、そのウインドウは
   // JavaScript オブジェクトがガベージコレクションを行った時に自動的に閉じられます。
