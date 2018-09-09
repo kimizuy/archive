@@ -15,14 +15,13 @@ class MainViewController: UIViewController {
         view.backgroundColor = .blue
         addbutton()
     }
-    
-    @objc func buttonTapped(){
+    @objc func buttonTapped() {
         print("Button tapped")
         let detailViewController = DetailViewController()
         navigationController?.pushViewController(detailViewController, animated: true)
     }
     
-    private func addbutton(){
+    private func addbutton() {
         let mainButton = UIButton()
         mainButton.translatesAutoresizingMaskIntoConstraints = false
         
@@ -44,4 +43,3 @@ class MainViewController: UIViewController {
         
     }
 }
-
