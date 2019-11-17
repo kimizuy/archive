@@ -1,4 +1,4 @@
-# My React Project
+# My React Sandbox
 
 ライブラリとかを試す用の個人的なリポジトリです
 
