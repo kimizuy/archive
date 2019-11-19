@@ -32,7 +32,8 @@
   "scripts": {
     "start": "parcel public/index.html",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "fmt": "prettier --write src/**/*"
   },
   "license": "UNLICENSED",
   "private": true
