@@ -4,6 +4,12 @@ body {
   margin: 0;
   font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Helvetica Neue',
     sans-serif;
+
+  /* 
+    アンチエイリアス処理
+    文字がすっきりして見える...らしい
+    https://qiita.com/htomine/items/3086f30ca09adea2f8e0
+  */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
