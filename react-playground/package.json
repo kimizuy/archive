@@ -34,10 +34,12 @@
     "typescript": "^3.7.2"
   },
   "scripts": {
-    "start": "parcel public/index.html",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
-    "fmt": "prettier --write src/**/*"
+    "build-watch": "parcel watch ./public/index.html",
+    "start-watch": "nodemon public/index.js",
+    "dev": "concurrently --kill-others \"npm run start-watch\" \"npm run build-watch\"",
+    "build": "parcel build ./public/index.html",
+    "serve": "parcel ./public/index.html",
+    "start": "yarn serve && node server/index.js"
   },
   "license": "UNLICENSED",
   "private": true
