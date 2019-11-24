@@ -38,8 +38,8 @@
     "start-watch": "nodemon public/index.js",
     "dev": "concurrently --kill-others \"npm run start-watch\" \"npm run build-watch\"",
     "build": "parcel build ./public/index.html",
-    "serve": "parcel ./public/index.html",
-    "start": "yarn serve && node server/index.js"
+    "start": "parcel ./public/index.html",
+    "serve": "node public/server.js"
   },
   "license": "UNLICENSED",
   "private": true
