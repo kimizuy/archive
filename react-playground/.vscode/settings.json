@@ -9,5 +9,13 @@
     "**/CVS": true,
     "**/.DS_Store": true
   },
-  "editor.formatOnSave": true
+  "editor.formatOnSave": true,
+  "[javascript]": {
+    "editor.formatOnSave": false
+  },
+  "[javascriptreact]": {
+    "editor.formatOnSave": false
+  },
+  "eslint.autoFixOnSave": true,
+  "prettier.disableLanguages": ["javascript", "javascriptreact"]
 }
