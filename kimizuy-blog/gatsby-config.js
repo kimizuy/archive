@@ -1,8 +1,11 @@
 module.exports = {
   siteMetadata: {
     title: `kimizuy-blog`,
-    author: `kimizuy`,
-    description: `kimizuy のブログです。`,
+    author: {
+      name: `kimizuy`,
+      summary: `kimizuy のブログです。`,
+    },
+    description: `A starter blog demonstrating what Gatsby can do.`,
     siteUrl: `https://github.com/kimizuy/kimizuy-blog`,
     social: {
       twitter: `kimizuy`,
@@ -47,6 +50,7 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-typescript`,
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
@@ -66,7 +70,6 @@ module.exports = {
         icon: `content/assets/gatsby-icon.png`,
       },
     },
-    `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-typography`,
@@ -74,5 +77,8 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`,
       },
     },
+    // this (optional) plugin enables Progressive Web App + Offline functionality
+    // To learn more, visit: https://gatsby.dev/offline
+    // `gatsby-plugin-offline`,
   ],
 }
