@@ -12,6 +12,6 @@
     "typescript": "^3.7.5"
   },
   "scripts": {
-    "start": "parcel index.html"
+    "start": "parcel ./public/index.html"
   }
 }
