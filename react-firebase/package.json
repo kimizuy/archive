@@ -40,6 +40,7 @@
   },
   "scripts": {
     "start": "parcel ./public/index.html",
+    "build": "parcel build ./public/index.html",
     "postinstall": "typesync",
     "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}'; stylelint 'src/**/*.{css,jsx,tsx}'; cd functions/ && eslint 'src/**/*.{js,ts}'",
     "precommit": "lint-staged"
