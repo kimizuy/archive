@@ -1,0 +1,276 @@
+fileFormatVersion: 2
+guid: add99a68ff546304295ff93287befcba
+timeCreated: 1447761820
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: neco_jump2_0
+    21300002: neco_jump2_1
+    21300004: neco_jump2_2
+    21300006: neco_jump2_3
+    21300008: neco_jump2_4
+    21300010: neco_jump2_5
+    21300012: neco_jump2_6
+    21300014: neco_jump2_7
+    21300016: neco_jump2_8
+    21300018: neco_jump2_9
+    21300020: neco_jump2_10
+    21300022: neco_jump2_11
+    21300024: neco_jump2_12
+    21300026: neco_jump2_13
+    21300028: neco_jump2_14
+    21300030: neco_jump2_15
+    21300032: neco_jump2_16
+    21300034: neco_jump2_17
+    21300036: neco_jump2_18
+    21300038: neco_jump2_19
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 120
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: neco_jump2_0
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 973
+        width: 179
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: neco_jump2_1
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 977
+        width: 183
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: neco_jump2_2
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 982
+        width: 194
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: neco_jump2_3
+      rect:
+        serializedVersion: 2
+        x: 1017
+        y: 987
+        width: 204
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: neco_jump2_4
+      rect:
+        serializedVersion: 2
+        x: 1336
+        y: 992
+        width: 214
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: neco_jump2_5
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 675
+        width: 224
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: neco_jump2_6
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 679
+        width: 231
+        height: 261
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: neco_jump2_7
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 685
+        width: 234
+        height: 262
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: neco_jump2_8
+      rect:
+        serializedVersion: 2
+        x: 1003
+        y: 690
+        width: 234
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: neco_jump2_9
+      rect:
+        serializedVersion: 2
+        x: 1324
+        y: 695
+        width: 231
+        height: 268
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: neco_jump2_10
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 368
+        width: 235
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: neco_jump2_11
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 363
+        width: 234
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: neco_jump2_12
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 359
+        width: 232
+        height: 261
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: neco_jump2_13
+      rect:
+        serializedVersion: 2
+        x: 1009
+        y: 354
+        width: 226
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: neco_jump2_14
+      rect:
+        serializedVersion: 2
+        x: 1334
+        y: 350
+        width: 219
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: neco_jump2_15
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 23
+        width: 210
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: neco_jump2_16
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 18
+        width: 201
+        height: 252
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: neco_jump2_17
+      rect:
+        serializedVersion: 2
+        x: 697
+        y: 14
+        width: 191
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: neco_jump2_18
+      rect:
+        serializedVersion: 2
+        x: 1022
+        y: 10
+        width: 181
+        height: 248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: neco_jump2_19
+      rect:
+        serializedVersion: 2
+        x: 1347
+        y: 5
+        width: 179
+        height: 248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

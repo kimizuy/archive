@@ -1,0 +1,276 @@
+fileFormatVersion: 2
+guid: cc79a4ff831d0de46ae44e72d946e0a1
+timeCreated: 1447763180
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: ume_attack2_0
+    21300002: ume_attack2_1
+    21300004: ume_attack2_2
+    21300006: ume_attack2_3
+    21300008: ume_attack2_4
+    21300010: ume_attack2_5
+    21300012: ume_attack2_6
+    21300014: ume_attack2_7
+    21300016: ume_attack2_8
+    21300018: ume_attack2_9
+    21300020: ume_attack2_10
+    21300022: ume_attack2_11
+    21300024: ume_attack2_12
+    21300026: ume_attack2_13
+    21300028: ume_attack2_14
+    21300030: ume_attack2_15
+    21300032: ume_attack2_16
+    21300034: ume_attack2_17
+    21300036: ume_attack2_18
+    21300038: ume_attack2_19
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 40
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: ume_attack2_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 880
+        width: 258
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ume_attack2_1
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 880
+        width: 256
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ume_attack2_2
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 879
+        width: 254
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ume_attack2_3
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 879
+        width: 252
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ume_attack2_4
+      rect:
+        serializedVersion: 2
+        x: 1117
+        y: 878
+        width: 251
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ume_attack2_5
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 601
+        width: 250
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ume_attack2_6
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 602
+        width: 251
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ume_attack2_7
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 602
+        width: 253
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ume_attack2_8
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 602
+        width: 255
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ume_attack2_9
+      rect:
+        serializedVersion: 2
+        x: 1112
+        y: 603
+        width: 256
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ume_attack2_10
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 322
+        width: 247
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ume_attack2_11
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 324
+        width: 246
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ume_attack2_12
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 325
+        width: 248
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ume_attack2_13
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 325
+        width: 248
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ume_attack2_14
+      rect:
+        serializedVersion: 2
+        x: 1118
+        y: 325
+        width: 250
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ume_attack2_15
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 48
+        width: 250
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ume_attack2_16
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 48
+        width: 249
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ume_attack2_17
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 48
+        width: 249
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ume_attack2_18
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 48
+        width: 248
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ume_attack2_19
+      rect:
+        serializedVersion: 2
+        x: 1121
+        y: 47
+        width: 247
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

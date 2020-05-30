@@ -1,0 +1,23 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\GameSave.cs">
+    <Files>
+      <File FileName="Assets\Scripts\EnemyLeft.cs" Line="24" Column="14" />
+      <File FileName="Assets\Scripts\Score.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Rocket.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\CountDown.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Result.cs" Line="44" Column="19" />
+      <File FileName="Assets\Scripts\Enemy.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Weapon01.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\toStage2Button.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\ResultText.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\toStage3Button.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Gun.cs" Line="109" Column="16" />
+      <File FileName="Assets\Scripts\GameSave.cs" Line="9" Column="2" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
