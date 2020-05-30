@@ -1,0 +1,17 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/HeadLookWalk.cs">
+    <Files>
+      <File FileName="Assets/Scripts/CursorPositioner.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/DestroyTimeout.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/KillTarget.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/LookMoveTo.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/FlippinDashboard.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/HeadLookWalk.cs" Line="10" Column="52" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
