@@ -1,0 +1,17 @@
+{
+  "name": "minimal-desktop-clock",
+  "version": "1.0.0",
+  "description": "https://github.com/kimizuy/minimal-desktop-clock",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "kimizuy",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^2.0.8"
+  },
+  
+  "productName": "Minimal Desktop Clock",
+  "version": "0.0.1"
+}
