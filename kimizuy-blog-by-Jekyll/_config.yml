@@ -1,0 +1,29 @@
+# Site settings
+title:          kimizuy blog
+description:    "kimizuyのブログです。"
+baseurl:        "/kimizuy_blog"
+url:            "https://kimizuy.github.io"
+
+# Author
+author:
+  name:         kimizuy
+  url:          
+  email:        
+
+# Build settings
+markdown:       kramdown
+
+# Assets
+sass:
+  sass_dir:     _sass
+  style:        compressed
+
+# Gems
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  # - jemoji #Uncomment this to allow emoji in your post
+
+# Permalinks
+permalink:      /:year-:month-:day/:title
+paginate:       5

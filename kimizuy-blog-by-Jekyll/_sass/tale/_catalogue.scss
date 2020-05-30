@@ -1,0 +1,44 @@
+.catalogue {
+  &-item {
+    border-bottom: 1px solid $grey-2;
+    color: $default-color;
+    display: inline-block;
+    padding: 1rem 0;
+
+    &:hover .catalogue-line,
+    &:focus .catalogue-line {
+      width: 5rem;
+    }
+
+    &:last-child {
+      border: 0;
+    }
+  }
+
+  &-time {
+    color: $default-tint;
+    font-family: $serif-secondary;
+    letter-spacing: 0.05em;
+  }
+
+  &-title {
+    color: $default-shade;
+    display: block;
+    font-family: $kimizuy-font;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0rem 0 0.3rem;
+    letter-spacing: 0.08em;
+  }
+
+  &-line {
+    @include transition(all .3s ease-out);
+    border-top: .2rem solid $default-shade;
+    display: block;
+    width: 2rem;
+  }
+
+  p{
+    letter-spacing: 0.03em;
+  }
+}

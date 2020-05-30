@@ -1,0 +1,113 @@
+* {
+  @include box-sizing;
+  line-height: 1.9;
+}
+
+html,
+body {
+  color: $default-color;
+  margin: 0;
+  padding: 0;
+  word-wrap: break-word;
+}
+
+html {
+  font-family: $kimizuy-font;
+  font-size: 14px;
+  overflow-y: scroll;
+  
+  @media (min-width: 600px) {
+    font-size: 16px;
+  }
+}
+
+body {
+  -webkit-text-size-adjust: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $default-shade;
+  font-family: $kimizuy-font;
+  line-height: normal;
+}
+
+a {
+  color: $blue;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  margin: 0 0 1rem;
+  max-width: 100%;
+}
+
+td {
+  vertical-align: top;
+}
+
+
+//Own customize blockquote
+blockquote {
+  position: relative;
+  padding: 7px 16px;
+  box-sizing: border-box;
+  font-style: italic;
+  color: #585858;
+  border: solid 3px #585858;
+  margin: 3rem 0;
+}
+
+blockquote:before{
+  display: inline-block;
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  vertical-align: middle;
+  text-align: center;
+  content: "\f10d";
+  font-family: "Font Awesome 5 Free";
+  background: #585858;
+  color: #FFF;
+  font-size: 22px;
+}
+
+blockquote:after{
+  display: inline-block;
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  vertical-align: middle;
+  text-align: center;
+  content: "\f10e";
+  font-family: "Font Awesome 5 Free";
+  background: #585858;
+  color: #FFF;
+  font-size: 22px;
+}
+
+blockquote p {
+  padding: 0;
+  margin: 10px 0;
+  line-height: 1.7;
+}
+
+blockquote cite {
+  display: block;
+  text-align: right;
+  color: #888888;
+  font-size: 0.9em;
+}
