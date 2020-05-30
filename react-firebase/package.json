@@ -1,0 +1,69 @@
+{
+  "name": "react-firebase",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@types/react": "^16.9.27",
+    "@types/react-dom": "^16.9.5",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  },
+  "devDependencies": {
+    "@types/eslint-plugin-prettier": "^2.2.0",
+    "@types/jest": "^25.2.1",
+    "@types/parcel-bundler": "^1.12.1",
+    "@types/prettier": "^1.19.1",
+    "@types/stylelint": "^9.10.1",
+    "@typescript-eslint/eslint-plugin": "^2.25.0",
+    "@typescript-eslint/parser": "^2.25.0",
+    "eslint-config-airbnb": "^18.1.0",
+    "eslint-config-prettier": "^6.10.1",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jest": "^23.8.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prefer-arrow": "^1.1.7",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-react": "^7.19.0",
+    "eslint-plugin-react-hooks": "^3.0.0",
+    "husky": "^4.2.3",
+    "jest": "^25.2.7",
+    "lint-staged": "^10.0.9",
+    "parcel-bundler": "^1.12.4",
+    "prettier": "^2.0.2",
+    "prettier-stylelint": "^0.4.2",
+    "stylelint": "^13.2.1",
+    "stylelint-config-prettier": "^8.0.1",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-config-styled-components": "^0.1.1",
+    "stylelint-order": "^4.0.0",
+    "stylelint-processor-styled-components": "^1.10.0",
+    "ts-jest": "^25.3.1",
+    "typescript": "^3.7.5"
+  },
+  "scripts": {
+    "start": "parcel ./public/index.html",
+    "build": "parcel build ./public/index.html",
+    "postinstall": "typesync",
+    "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}'; stylelint 'src/**/*.{css,jsx,tsx}'; cd functions/ && eslint 'src/**/*.{js,ts}'",
+    "precommit": "lint-staged"
+  },
+  "huskey": {
+    "hooks": {
+      "pre-commit": "lint-sta"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx}": [
+      "stylelint --fix",
+      "git add"
+    ],
+    "functions/src/**/*.{js,ts}": [
+      "cd functions/ && eslint --fix",
+      "git add"
+    ]
+  },
+  "engines": {
+    "node": "latest"
+  }
+}
